@@ -2,7 +2,7 @@
 $hero_sec = get_field('hero_section', 30);
 ?>
 <!--===== HERO AREA STARTS =======-->
-<div class="hero1-section-area" id="hero" style="background-image: url(<?= get_template_directory_uri(); ?>/assets/img/bg/header-bg1.png);">
+<div class="hero1-section-area" id="hero" style="background-image: url(<?= get_template_directory_uri(); ?>/assets/img/bg/header-bg111.png);">
   <img src="<?= get_template_directory_uri(); ?>/assets/img/elements/elements1.png" alt="" class="d-none elements1 aniamtion-key-1">
   <div class="container">
     <div class="row align-items-center">

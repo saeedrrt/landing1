@@ -22,10 +22,10 @@ $sections = [
   'hero'           => 'hero_section',
   'about'          => 'about_section',
   'services'          => 'services_section',
-  'partner'          => 'partner_section',
   'our-team'          => 'team_section',
   'clients'          => 'clients_section',
   'call-us'          => 'contact_section',
+  'partner'          => 'partner_section',
 ];
 
 foreach ( $sections as $slug => $acf_key ) {

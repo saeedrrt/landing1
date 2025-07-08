@@ -1,4 +1,4 @@
-<div class="all-section-bg" style="background-image: url(<?= get_template_directory_uri(); ?>/assets/img/bg/pages-bg1.png); background-repeat: no-repeat; background-size: cover;">
+<div class="all-section-bg" style="background-image: url(<?= get_template_directory_uri(); ?>/assets/img/bg/pages-bg111.png); background-repeat: no-repeat; background-size: cover;">
 
 <?php 
 $about_sec = get_field('about_section', 30);

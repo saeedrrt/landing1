@@ -24,7 +24,7 @@ $service_sec = get_field('services_section', 30);
 
           <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-duration="800">
             <div class="works-author-boxarea">
-              <div class="icons-photo">
+              <div class="icons">
                 <img src="<?= $item['photo']; ?>" alt="">
               </div>
               <div class="space24"></div>
