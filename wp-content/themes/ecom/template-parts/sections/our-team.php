@@ -19,7 +19,7 @@ $team_sec = get_field('our_team', 30);
         foreach ($team_sec['team_box'] as $item): ?>
           <div class="col-lg-3 col-md-6">
             <div class="team-boxarea">
-              <div class="img1">
+              <div class="img1" data-aos="zoom-out">
                 <img src="<?= $item['photo']; ?>" alt="">
               </div>
               <ul>

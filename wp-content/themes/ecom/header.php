@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/css/plugins/sidebar.css">
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/css/plugins/slick-slider.css">
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/css/plugins/nice-select.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/css/main.css">
 
   <!--=====  JS SCRIPT LINK =======-->

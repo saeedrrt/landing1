@@ -6701,6 +6701,7 @@ Location:
   top: 0;
   z-index: -1;
   left: 0;
+  display: none;
 }
 @media (max-width: 767px) {
   .hero1-section-area .header-images-area .main-images-area .img2 {
@@ -20565,16 +20566,46 @@ Location:
   position: relative;
   z-index: 1;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 17px;
   transition: all 0.4s;
   background: var(--ztc-text-text-1);
   padding: 32px;
   margin-bottom: 30px;
+  position: relative;
+    z-index: 5;
 }
-/*.works4-section-area .works-author-boxarea:hover {*/
-/*  transition: all 0.4s;*/
-/*  transform: translateY(-5px);*/
-/*}*/
+.works4-section-area .works-author-boxarea::before{
+    content: "";
+    width: 95%;
+    height: 95%;
+    z-index: -3;
+    position: absolute;
+    top: auto;
+    bottom: 1px;
+    left: 1px;
+    /*border-radius: 110px 0 110px 0;*/
+    border-radius: 17px;
+    background: var(--ztc-text-text-2);
+    outline: 1px solid transparent;
+    transition: all .5s;
+}
+.works4-section-area .works-author-boxarea::after{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--ztc-text-text-1);
+    /*border-radius: 110px 0 110px 0;*/
+    border-radius: 17px;
+    box-shadow: 0 10px 50px rgba(166, 209, 237, .2);
+    z-index: 1;
+}
+.works4-section-area .works-author-boxarea:hover:before {
+    transform: translateX(-15px) translateY(20px) rotate(-3deg);
+}
 /*.works4-section-area .works-author-boxarea:hover::after {*/
 /*  width: 100%;*/
 /*  visibility: visible;*/
@@ -20600,21 +20631,21 @@ Location:
   opacity: 80%;
   transition: all 0.4s;
 }
-.works4-section-area .works-author-boxarea::after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 1px;
-  left: 50%;
-  top: 0;
-  transition: all 0.4s;
-  z-index: -1;
-  border: 1px solid var(--ztc-text-text-6);
-  box-shadow: 4px 10px 8px 0px rgb(14 41 84 / 15%);
-  border-radius: 8px;
-  visibility: hidden;
-  opacity: 1;
-}
+/*.works4-section-area .works-author-boxarea::after {*/
+/*  position: absolute;*/
+/*  content: "";*/
+/*  height: 100%;*/
+/*  width: 1px;*/
+/*  left: 50%;*/
+/*  top: 0;*/
+/*  transition: all 0.4s;*/
+/*  z-index: -1;*/
+/*  border: 1px solid var(--ztc-text-text-6);*/
+/*  box-shadow: 4px 10px 8px 0px rgb(14 41 84 / 15%);*/
+/*  border-radius: 8px;*/
+/*  visibility: hidden;*/
+/*  opacity: 1;*/
+/*}*/
 .works4-section-area .works-author-boxarea .icons {
   height: 60px;
   width: 60px;
@@ -20622,11 +20653,21 @@ Location:
   line-height: 60px;
   border-radius: 50%;
   transition: all 0.4s;
-  background: var(--ztc-text-text-9);
+  background: var(--ztc-bg-bg-1);
   margin: 0 auto;
+  position: relative;
+  z-index: 6;
 }
 .works4-section-area .works-author-boxarea .icons img {
   transition: all 0.4s;
+}
+.works4-section-area .works-author-boxarea .space24{
+      position: relative;
+  z-index: 6;
+}
+.works4-section-area .works-author-boxarea .content-area{
+    position: relative;
+    z-index: 6;
 }
 .works4-section-area .works-author-boxarea .content-area a {
   font-family: var(--ztc-family-font1);
@@ -20646,6 +20687,7 @@ Location:
   color: var(--ztc-text-text-3);
   transition: all 0.4s;
   opacity: 80%;
+    height: 80px;
 }
 .works4-section-area .works-author-boxarea .content-area .readmore {
   font-family: var(--ztc-family-font1);
@@ -21482,7 +21524,7 @@ Location:
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 70px;
+  /*height: 70px;*/
   width: 60px;
 }
 
@@ -31877,6 +31919,96 @@ Location:
   line-height: 28px;
   display: inline-block;
   transition: all 0.4s;
+}
+
+/*=========Animation************/
+@-webkit-keyframes rotateme {
+    0% {
+        -webkit-transform: rotate(0deg);
+        opacity: 1;
+      }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+        opacity: 0.7;
+      }
+    100% {
+        -webkit-transform: rotate(360deg);
+        opacity: 1;
+      }
+}
+@-moz-keyframes rotateme {
+    0% {
+        -moz-transform: rotate(0deg);
+        opacity: 1;
+      }
+
+    50% {
+        -moz-transform: rotate(180deg);
+        opacity: 0.7;
+      }
+    100% {
+        -moz-transform: rotate(360deg);
+        opacity: 1;
+      }
+}
+@-o-keyframes rotateme {
+    0% {
+        -o-transform: rotate(0deg);
+        opacity: 1;
+      }
+
+    50% {
+        -o-transform: rotate(180deg);
+        opacity: 0.7;
+      }
+    100% {
+        -o-transform: rotate(360deg);
+        opacity: 1;
+      }
+}
+
+@keyframes rotateme {
+    
+     0% {
+        transform: rotate(0deg);
+        opacity: 1;
+      }
+
+    50% {
+        transform: rotate(180deg);
+      }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+      }
+}
+
+.patern-layer-one{
+    animation-name: rotateme; 
+    animation-duration: 50s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+	
+	-webkit-animation-name: rotateme; 
+    -webkit-animation-duration: 50s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+	
+	-moz-animation-name: rotateme; 
+    -moz-animation-duration: 50s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+	
+	-ms-animation-name: rotateme; 
+    -ms-animation-duration: 50s; 
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+	
+	-o-animation-name: rotateme; 
+    -o-animation-duration: 50s; 
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
 }
 
 /*============= CASE STUDY CSS AREA ENDS ===============*//*# sourceMappingURL=main.css.map */

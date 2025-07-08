@@ -3,7 +3,9 @@ $client_sec = get_field('our_clients', 30);
 ?>
 
 <!--===== TESTIMONIAL AREA STARTS =======-->
-<div class="testimonial1-section-area sp1" id="client">
+<div class="testimonial1-section-area sp1" id="client" data-aos="zoom-in"
+  data-aos-delay="200"
+  data-aos-duration="800">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-12">
@@ -16,7 +18,7 @@ $client_sec = get_field('our_clients', 30);
                 <?php
                 if ($client_sec['slider_text']):
                   foreach ($client_sec['slider_text'] as $item): ?>
-                    <div class="testimonial-slider-boxarea">
+                    <div class="testimonial-slider-boxarea" data-aos="zoom-in">
                       <img src="<?= get_template_directory_uri(); ?>/assets/img/icons/quito3.svg" alt="">
                       <div class="space24"></div>
                       <div class="testimonial5-all-content">

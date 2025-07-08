@@ -123,6 +123,7 @@ $contact_sec = get_field('contact_us', 30);
 <script src="<?= get_template_directory_uri(); ?>/assets/js/plugins/circle-progress.js"></script>
 <script src="<?= get_template_directory_uri(); ?>/assets/js/main.js"></script>
 
+
 <?php wp_footer(); ?>
 </body>
 

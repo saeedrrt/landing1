@@ -4,7 +4,9 @@
 $about_sec = get_field('about_section', 30);
 ?>
 <!--===== WORK AREA STARTS =======-->
-<div class="works-inner-section-area sp1" id="about">
+<div class="works-inner-section-area sp1" id="about" data-aos="fade-up"
+  data-aos-delay="500"
+  data-aos-duration="1000">
     <div class="container">
         <div class="row align-items-center">
             
@@ -21,7 +23,7 @@ $about_sec = get_field('about_section', 30);
 
             <div class="col-lg-1"></div>
             
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-up">
                 <div class="about-all-images-area">
                     <img src="<?= get_template_directory_uri(); ?>/assets/img/elements/elements14.png" alt="" class="elements12 keyframe5">
                     <img src="<?= get_template_directory_uri(); ?>/assets/img/elements/elements15.png" alt="" class="elements13 keyframe5">
