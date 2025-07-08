@@ -1,0 +1,9 @@
+wp-content/plugins
+wp-content/ai1wm-backups
+wp-content/uploads
+wp-content/themes/alamiya/assets/imgs
+wp-content/debug.log
+wp-admin
+wp-includes
+wp-config.php
+.htaccess
